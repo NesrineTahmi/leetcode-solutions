@@ -1,0 +1,5 @@
+# We will use self join for this problem
+SELECT e1.name AS Employee
+FROM Employee e1 JOIN Employee e2
+ON e1.ManagerId = e2.id
+WHERE e1.salary > e2.salary
